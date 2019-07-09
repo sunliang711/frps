@@ -93,6 +93,7 @@ Description='frps service'
 [Service]
 Type=simple
 ExecStart=$dest/frps -c $dest/frps.ini
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
